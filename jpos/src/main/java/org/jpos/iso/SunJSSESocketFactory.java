@@ -31,6 +31,6 @@ import java.security.Security;
  */
 public class SunJSSESocketFactory extends GenericSSLSocketFactory {
     static {
-        Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider()); 
+        Security.addProvider(Security.getProvider("SunJSSE")); 
     }
 }
